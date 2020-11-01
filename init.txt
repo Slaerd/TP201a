@@ -1,0 +1,8 @@
+retVal->m_triangleIndices.push_back( resolution * i + j);
+					retVal->m_triangleIndices.push_back( (resolution * i + (j + 1) % resolution));
+					retVal->m_triangleIndices.push_back( (resolution * (i + 1) + (j + 1) % resolution));
+
+
+					retVal->m_triangleIndices.push_back((resolution * (i + 1) + (j + 1) % resolution));
+					retVal->m_triangleIndices.push_back( (resolution * (i + 1) + j) );
+					retVal->m_triangleIndices.push_back(resolution * i + j);
